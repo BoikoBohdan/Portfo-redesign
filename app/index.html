@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, 
 	user-scalable=no, maximum-scale=1">
+	<link rel="shortcut icon" href="/img/favicon.ico" type="image/png">
 	<title>Богдан Бойко</title>
 	<link rel="stylesheet" href="css/normalaize.css"> <!-- Подключаем normalize CSS -->
 	<link rel="stylesheet" href="css/main.min.css"> <!-- Подключаем CSS -->
@@ -33,13 +34,16 @@
 				<a href="#2" class="menu__link" name="2"><h4>Обо мне</h4></a>
 			</li>
 			<li class="menu__item">
-				<a href="#3" class="menu__link" name="3"><h4>Роботы</h4></a>
+				<a href="#4" class="menu__link" name="3"><h4>Навыки</h4></a>
 			</li>
 			<li class="menu__item">
-				<a href="#4" class="menu__link" name="4"><h4>Навыки</h4></a>
+				<a href="#5" class="menu__link" name="4"><h4>Статисктика</h4></a>
 			</li>
 			<li class="menu__item">
-				<a href="#5" class="menu__link" name="5"><h4>Контакты</h4></a>
+				<a href="#3" class="menu__link" name="5"><h4>Роботы</h4></a>
+			</li>
+			<li class="menu__item">
+				<a href="#6" class="menu__link" name="6"><h4>Контакты</h4></a>
 			</li>
 		</ul>
 	</nav>
@@ -48,7 +52,9 @@
 			<div class="section__container">
 				<div class="myself">
 					<img src="img/myfoto.jpeg" alt="Bohdan Boiko Selfi">
-					<h4 class="myself__job">Junior/Trainee Front-end Developer</h4>
+					<h4 class="myself__job">
+						Выбери себе работу по душе, и тебе не придется работать ни одного дня в своей жизни (Конфуций)
+					</h4>
 					<div class="myself__content">
 						<div class="myself__block">
 							<h3 class="myself__title">Ценности</h3>
@@ -58,17 +64,17 @@
 							</p>
 						</div>
 						<div class="myself__block">
-							<h3 class="myself__title">Ценности</h3>
+							<h3 class="myself__title">Цели</h3>
 							<p class="myself__text">
-								Считаю, что главное в людях честность, способность принимать 
-								тудные решения и способность им следовать в дальнейшем.
+								Стать "синьором девелопером", завести собаку, 
+								посетить как минимум 10 различных стран.
 							</p>
 						</div>
 						<div class="myself__block">
-							<h3 class="myself__title">Ценности</h3>
+							<h3 class="myself__title">Хобби</h3>
 							<p class="myself__text">
-								Считаю, что главное в людях честность, способность принимать 
-								тудные решения и способность им следовать в дальнейшем.
+								Люблю складывать пазлы, растить лимон и авокадо, 
+								кататься на сноуборде. Хочу научиться играть на гитаре.
 							</p>
 						</div>
 					</div>
@@ -98,14 +104,61 @@
 							<img src="img/photoshop.png" alt="Photoshop">
 						</div>
 					</div>
-					
+				</div>
+			</div>
+		</section>
+		<section class="section slills-section">
+			<div class="section__container">
+				<div class="skills">
+					<h2 class="skills__title">Навыки</h2>
+					<div class="skills__container">
+							<div class="knowledge">	
+									<div class="knowledge__block">	
+											<h5 class="knowledge__title">Основные навыки:</h5>
+											<ul class="knowledge__list">	
+												<li class="knowledge__item">
+													Кроссбраузерная, валидная, семантичная, адаптивная верстка
+												</li>
+												<li class="knowledge__item">
+													Уверенные знания JavaScript (jQuery)
+												</li>
+												<li class="knowledge__item">
+													Умею использовать БЭМ и SASS для модульности блоков
+												</li>
+												<li class="knowledge__item">
+													Все необходимые для верстальщика навыки работы с Photoshop, Avocode
+												</li>
+												<li class="knowledge__item">
+													Опыт работы с git, OS: Windows, Linux
+												</li>
+												<li class="knowledge__item">
+													Использую Gulp для ускорения работы
+												</li>
+												<li class="knowledge__item">
+													Использую Trello для составления задач 
+												</li>
+												<li class="knowledge__item">
+													Английский язык Intermediate
+												</li>
+											</ul>
+									</div>
+									<div class="knowledge__block">	
+											<h5 class="knowledge__title">Помимо основных навыков:</h5>
+											<ul class="knowledge__list">	
+													<li class="knowledge__item">Знания PHP для работы с Wordpress</li>
+													<li class="knowledge__item">MySQL  умею работать с запросами в базу даных</li>
+													<li class="knowledge__item">C# вузовский курс</li>
+											</ul>
+									</div>
+							</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section progress-section">
 			<div class="section__container">
 				<div class="progress">
-					<h2 class="progress__title">Навыки</h2>
+					<h2 class="progress__title">Статистика</h2>
 					<div class="progress__list">
 						<div class="progress__item">
 							<div class="sector html">
@@ -189,23 +242,34 @@
 					<h2 class="portfolio__title">Роботы</h2>
 					<div class="portfolio__content">
 						<ul class="category__list">
-							<li class="category__item">
-								WordPress
+							<li class="category__item active">
+								<a href="#All">
+									All
+								</a>
 							</li>
 							<li class="category__item">
-								Vue.js
+								<a href="#Wordpress">
+									WordPress
+								</a>
 							</li>
 							<li class="category__item">
-								Landing page
+								<a href="#Vue">
+									Vue.js
+								</a>
+							</li>
+							<li class="category__item">
+								<a href="#Landing">
+									Landing page
+								</a>
 							</li>
 						</ul>
 						<ul class="works__list">
-							<li class="works__item">
+							<li class="works__item" id="Landing">
 								<a href="#">
 									<img src="img/Work1.png" alt="Bullsy">
 								</a>
 							</li>
-							<li class="works__item">
+							<li class="works__item" id="Wordpress">
 								<a href="#">
 									<img src="img/Work3.png" alt="Shopno">
 								</a>

@@ -56,6 +56,7 @@
     });
 
  };
+
  $(document).ready(function(){ 
     initPageSlider();
     const menu = $('.menu');
@@ -89,13 +90,34 @@
          vue  = $('.vue'),
          avocode = $('.avocode'),
          jquery = $('.jquery');
-    progressBarUpdate(280, 100, html);
-    progressBarUpdate(280, 100, css);
-    progressBarUpdate(280, 100, js);
-    progressBarUpdate(280, 100, vue);
-    progressBarUpdate(280, 100, avocode);
-    progressBarUpdate(280, 100, jquery);
+    progressBarUpdate(90, 100, html);
+    progressBarUpdate(80, 100, css);
+    progressBarUpdate(70, 100, js);
+    progressBarUpdate(20, 100, vue);
+    progressBarUpdate(90, 100, avocode);
+    progressBarUpdate(70, 100, jquery);
+
+    $('.category__item a').click(function(){
+        if($(this).attr('href') != '#All'){
+            console.log($(this).attr('href'));
+            $(this).parents('.portfolio__content').find('.works__item').addClass('hide');
+            $(this).parent().siblings().removeClass('active');
+            var id = $(this).attr('href');
+            $(id).removeClass('hide');
+            $(this).parent().addClass('active');
+            return false
+        }
+        else{
+            $(this).parent().siblings().removeClass('active');
+            $(this).parent().addClass('active');
+
+            $('#Wordpress').removeClass('hide');
+            $('#Landing').removeClass('hide');
+        }
+    });
  });
+
+
  function rotate(element, degree) {
     element.css({
         '-webkit-transform': 'rotate(' + degree + 'deg)',

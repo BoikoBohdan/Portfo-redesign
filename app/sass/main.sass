@@ -34,7 +34,7 @@ body
 	font-size: 16px
 
 .head
-	position: absolute
+	position: fixed
 	z-index: 999
 	width: 100%
 	height: 100px
@@ -93,7 +93,7 @@ body
 
 .menu
 	position: absolute
-	top: 0%
+	top: 0
 	left: 0%
 	width: 100vw
 	height: 100vh
@@ -176,7 +176,6 @@ body
 		margin-top: 50px
 		display: flex
 		flex-wrap: wrpa
-		align-items: center
 		justify-content: space-around
 	&__block
 		width: 30%
@@ -221,15 +220,16 @@ body
 	&__title
 		font-size: 2em	
 		font-size: 	500
-		margin-bottom: 100px	
+		margin-bottom: 70px	
 		text-transform: uppercase	
 
 .knowledge
 	display: flex	
 	justify-content: space-between	
+	width: 100%
 	&__block
 		text-align: left
-		width: 40%	
+		width: 45%	
 	&__title
 		font-size: 	1.5em
 		margin-bottom: 20px	
@@ -269,6 +269,8 @@ body
 		display: flex
 		justify-content: space-around
 		width: 33%
+		min-width: 200px
+		margin: 0 auto
 		padding: 50px 0
 
 .sector
@@ -353,8 +355,10 @@ body
 		margin-bottom: 50px
 		list-style: none
 		display: flex
+		flex-wrap: wrap
 		align-items: center
 		justify-content: space-around
+		text-align: center
 	&__item
 		font-size: 1.5em	
 		font-weight: 600
@@ -369,6 +373,7 @@ body
 
 .works
 	transition: 1s
+	height: 70vh
 	&__list
 		list-style: none
 		display: flex
@@ -401,19 +406,76 @@ body
 		align-items: center
 		justify-content: space-around
 		& img
-			width: 300px
+			max-width: 100%
+			max-height: 30vh
 	&__info
 		font-size: 1.5em
 		width: 60%
-		margin: 100px auto
+		margin: 50px auto
 	& a
 		display: block
 		text-decoration: none
 		color: #fff
 		margin-bottom: 20px
 		font-size: 1.2em
-@media screen and (max-width: 800px)
-	.myself
-		& img
-			width: 300px
 
+@media screen and (max-width: 800px), screen and (max-height: 770px)
+	.myself
+		text-align: center
+		& img
+			width: 250px
+		&__job
+			font-size: 1em
+			margin: 10px auto
+		&__content
+			margin-top: 20px
+	.about__text
+		font-size: 1.2em
+	.skills__title
+		margin-bottom: 30px
+	.progress__item
+		margin: 0 auto
+		padding: 0
+	.knowledge__item
+			margin-bottom: 10px
+			font-size: 1em
+	.contact__info
+		width: 90%
+
+@media screen and (max-width: 660px), screen and (max-height: 700px)
+	body
+		overflow-y: visible
+	.section
+		height: auto!important
+	.myself, .about, .skills, .progress, .work, .contact
+		height: auto
+		padding: 100px 0
+	.myself
+		&__content
+			display: block
+			width: 100%
+		&__block
+			width: 70%
+			margin: 25px auto
+		&__job
+			width: 100%
+			max-width: 200px
+	.about
+		&__content
+			display: block
+		&__left
+			width: 100%
+		&__right
+			width: 100%
+	.knowledge
+		display: block
+		&__block
+			width: 100%
+			padding: 30px 40px 0
+	.portfolio
+		padding-top: 100px
+
+	.contact__links
+		display: block
+		width: 60%
+		margin: 0 auto
